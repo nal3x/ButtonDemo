@@ -23,7 +23,11 @@ public class ButtonDemo extends JPanel
         b1 = new JButton("Disable middle button", leftButtonIcon);
         b1.setVerticalTextPosition(AbstractButton.CENTER);
         b1.setHorizontalTextPosition(AbstractButton.LEADING); //aka LEFT, for left-to-right locales
-        b1.setMnemonic(KeyEvent.VK_D);
+        b1.setMnemonic(KeyEvent.VK_D); //try alt-d key combination...
+        /* Sets the keyboard mnemonic on the current model. The mnemonic is 
+        the key which when combined with the look and feel's mouseless modifier 
+        (usually Alt) will activate this button if focus is contained somewhere 
+        within this button's ancestor window.*/ 
         b1.setActionCommand("disable");
 
         b2 = new JButton("Middle button", middleButtonIcon);
